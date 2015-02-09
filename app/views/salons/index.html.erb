@@ -1,0 +1,9 @@
+<h1>Salons</h1>
+
+<% @salons.each do |salon| %>
+  <%= image_tag(salon.image, :class => 'thumb') %>
+  <ul>
+    <li>Name: <%= link_to(salon.name, salon) %></li>
+    <li>Location: <%= link_to(salon.location) %></li>
+  </ul>
+<% end %>
