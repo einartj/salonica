@@ -1,5 +1,9 @@
 <h1>Salons</h1>
 
+<p>
+  <%= button_to 'Edit Salon', edit_salon_path(@salon) %>
+  <%= button_to 'Delete Salon', @salon, :method => 'delete', :data => { :confirm => "Are you sure?" } %>
+
 <%= image_tag @salon.image, :class => 'portrait' %>
   <ul>
     <li>Name: <%= @salon.name %></li>
