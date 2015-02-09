@@ -1,7 +1,7 @@
-<h1>Salons#show</h1>
-<p>Find me in app/views/salons/show.html.erb</p>
-<%= image_tag(salon.image, :class => 'thumb') %>
+<h1>Salons</h1>
+
+<%= image_tag @salon.image, :class => 'portrait' %>
   <ul>
-    <li>Name: <%= link_to(salon.name, salon) %></li>
-    <li>Location: <%= link_to(salon.location) %></li>
+    <li>Name: <%= @salon.name %></li>
+    <li>Location: <%= @salon.location %></li>
   </ul>
